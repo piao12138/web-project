@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- 元标签 -->
+    <meta charset="utf-8">
+    <!-- 作者 -->
+    <meta name="name" content="朱传伟">
+    <!-- 描述 -->
+    <meta name="description" content="密码学资料">
+    <!-- 页面标题 -->
+    <title>密码学资料</title>
+    <!-- 网站图标 -->
+    <link href="static/image/favicon.ico" rel="icon">
+    <link href="static/css/bundle.min.css" rel="stylesheet">
+    <!-- 插件 CSS -->
+    <link href="static/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="static/css/LineIcons.min.css" rel="stylesheet"> -->
+    <!-- <link href="static/css/jquery.fancybox.min.css" rel="stylesheet"> -->
+    <!-- 样式表 -->
+    <link href="static/css/line-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
+<style type="text/css">
+.bs:hover{
+    color: pink;
+}
+</style>
+<!-- 预加载开始 -->
+<div class="loader-bg">
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- 预加载结束 -->
+
+<!-- 标题开始 -->
+<header>
+    <!--导航栏-->
+    <nav class="navbar navbar-top-default navbar-expand-lg navbar-simple nav-line">
+        <div class="container">
+            <a href="#slider-area" title="Logo" class="logo scroll">
+                <!--logo-->
+                <img src="static/image/favicon.ico" title="logo" alt="logo" class="logo-default">
+            </a>
+
+            <!--顶部导航栏链接-->
+            <div class="collapse navbar-collapse" id="megaone">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link scroll line active" href="#slider-area">简介</a>
+                    <a class="nav-link scroll line" href="#about">摘要</a>
+                    <a class="nav-link scroll line" href="#prices">古典密码学</a>
+                    <a class="nav-link scroll line" href="#hosting">近代密码学</a>
+                    <a class="nav-link scroll line" href="#testimonials">现代密码学</a>
+                    <a class="nav-link scroll line" href="#blog">量子密码学</a>
+                    <a class="nav-link scroll line" href="#contact">联系我</a>
+                </div>
+            </div>
+        </div>
+
+        <!--侧面菜单按钮-->
+        <div>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="sidemenu_btn" id="sidemenu_toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--侧面导航栏-->
+    <div class="side-menu hidden">
+        <div class="inner-wrapper">
+            <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+            <a href="" title="Logo" class="logo side-logo">
+                <!--Logo-->
+                <img src="static/image/favicon.ico" alt="logo">
+            </a>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav side-navbar">
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#slider-area">简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#about">摘要</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#prices">古典密码学</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#hosting">近代密码学</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#testimonials">现代密码学</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#blog">量子密码学</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#contact">联系我</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="side-footer w-100">
+                <ul class="social-icons-simple">
+                    <li><a class="social-icon" href="https://connect.facebook.com"><i class="fab fa-facebook-f"></i> </a> </li>
+                    <li><a class="social-icon" href="www.twitters.com"><i class="fab fa-twitter"></i> </a> </li>
+                    <li><a class="social-icon" href="https://cn.linkedin.com"><i class="fab fa-linkedin-in"></i> </a> </li>
+                    <li><a class="social-icon" href="www.sinoclick.com"><i class="fab fa-instagram"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a id="close_side_menu" href="javascript:void(0);"></a>
+</header>
+<!-- 标题结束 -->
+
+<!-- 简介开始 -->
+<section id="particles-js" class="p-0 position-relative">
+    <div class="slider-area" id="slider-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-6 text-md-center text-lg-left wow fadeInLeft content-margin" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                    <div class="area-heading text-center text-lg-left">
+                        <h1 class="main-font text-white font-weight-bold mb-4">密码学</h1>
+                        <p class="text-white alt-font mb-5" style="text-indent:2em;" >密码学是研究如何隐密地传递信息的学科。在现代特别指对信息以及其传输的数学性研究，常被认为是数学和计算机科学的分支，和信息论也密切相关。密码学是信息安全等相关议题，如认证、访问控制的核心。密码学也促进了计算机科学，特别是在于电脑与网络安全所使用的技术，如访问控制与信息的机密性。 </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-right image-order wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                    <div class="slider-image">
+                        <img src="static/picture/R-C.ico" width="400";height="400" alt="Slider-Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 三大作用 -->
+    <div class="author-skills bg-blue">
+        <div class="container">
+            <div class="row text-center text-lg-left">
+                <!-- 第一个作用 -->
+                <div class="col-12 col-md-4 about-media wow zoomIn" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                    <span class="about-icon"><a href="javascript:void(0);"><i class="la la-laptop-code"></i></a></span>
+                    <h4 class="small-heading main-font">加密解密</h4>
+                    <p class="small-text alt-font">使用密码学的密钥对信息进行加解密，可以防止信息被人窃取。</p>
+                </div>
+                <!-- 第二个作用 -->
+                <div class="col-12 col-md-4 about-media wow zoomIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                    <span class="about-icon"><a href="javascript:void(0);"><i class="las la-server"></i></a></span>
+                    <h4 class="small-heading main-font">身份认证</h4>
+                    <p class="small-text alt-font">身份认证是用于确认用户是否为这个用户的手段，是对于信息的发送方的身份确认。</p>
+                </div>
+                <!-- 第三个作用 -->
+                <div class="col-12 col-md-4 about-media wow zoomIn" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                    <span class="about-icon"><a href="javascript:void(0);"><i class="las la-registered"></i></a></span>
+                    <h4 class="small-heading main-font">数字签名</h4>
+                    <p class="small-text alt-font">数字签名（又称公钥数字签名）是只有信息的发送者才能产生的别人无法伪造的一段数字串，这段数字串同时也是对信息的发送者发送信息真实性的一个有效证明。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 简介结束 -->
+
+<!-- 摘要开始 -->
+<section id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- 视频 -->
+            <div class=" col-sm-12 col-md-6 img-sec mt-5 mt-md-0 wow fadeIn order-2 order-md-1" data-wow-duration="1.5s" data-wow-delay=".5s">
+                <video width="420" style="margin-top:15px;" controls>
+                    <source src="static/vedio/mmx.mp4" type="video/mp4" />
+                    <source src="static/vedio/mmx.ogg" type="video/ogg">
+                </video>
+            </div>
+            <!-- 内容 -->
+            <div class="col-sm-12 col-md-6 pl-md-5 wow fadeInRight order-1 order-md-1" data-wow-duration="1.5s" data-wow-delay=".5s">
+                <div class="about-heading">
+                    <h1 class="heading margin_heading main-font"> 什么是密码学? </h1>
+                <div style="width: 500px; height:300px;overflow-x:hidden;">
+                    <p class="info"; style="text-indent:2em;">其实在公元前，秘密书信已用于战争之中。西洋“史学之父”希罗多德（Herodotus）的《历史》（The Histories）当中记载了一些最早的秘密书信故事。公元前5世纪，希腊城邦为对抗奴役和侵略，与波斯发生多次冲突和战争。于公元前480年，波斯秘密结了强大的军队，准备对雅典（Athens）和斯巴达（Sparta）发动一次突袭。希腊人狄马拉图斯（Demaratus）在波斯的苏萨城（Susa）里看到了这次集结，便利用了一层蜡把木板上的字遮盖住，送往并告知了希腊人波斯的图谋。最后，波斯海军覆没于雅典附近的沙拉米斯湾（Salamis Bay）。</p>
+                    <p class="info"; style="text-indent:2em;">密码是通信双方按约定的法则进行信息特殊变换的一种重要保密手段。依照这些法则，变明文为密文，称为加密变换；变密文为明文，称为脱密变换。密码在早期仅对文字或数码进行加、脱密变换，随着通信技术的发展，对语音、图像、数据等都可实施加、脱密变换。</p>
+                    <p class="info"; style="text-indent:2em;"> 密码学是在编码与破译的斗争实践中逐步发展起来的，并随着先进科学技术的应用，已成为一门综合性的尖端技术科学。它与语言学、数学、电子学、声学、信息论、计算机科学等有着广泛而密切的联系。它的现实研究成果，特别是各国政府现用的密码编制及破译手段都具有高度的机密性。</p>
+                    <p class="info"; style="text-indent:2em;"> 在通信过程中，待加密的信息称为明文，已被加密的信息称为密文，仅有收、发双方知道的信息称为密钥。在密钥控制下，由明文变到密文的过程叫加密，其逆过程叫脱密或解密。在密码系统中，除合法用户外，还有非法的截收者，他们试图通过各种办法窃取机密（又称为被动攻击)或窜改消息（又称为主动攻击）。</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 必要性开始 -->
+<section class="stats-sec pt-0" id="stats-sec">
+    <div class="container">
+        <div class="row circular-wrap text-center">
+            <!-- 第一个必要性 -->
+            <div class="col-12 col-lg-4 wow bounceIn">
+                <div id="circle" class="circle" data-value="2.24">
+                    <h6 class="counter-num">224%</h6>
+                </div>
+                <h4 class="stats-heading">年增长率</h4>
+                <p class="stats-para">据中国政府报告，网络攻击泄露数据平均年增长高达224%</p>
+            </div>
+            <!-- 第二个必要性 -->
+            <div class="col-12 col-lg-4 wow bounceIn wrap-2">
+                <div id="circletwo" class="circle" data-value="0.70">
+                    <h6 class="counter-num">70%</h6>
+                </div>
+                <h4 class="stats-heading">信息泄露占比</h4>
+                <p class="stats-para">据中国政府报告，2021年有70%的中国公民信息被泄露</p>
+            </div>
+            <!-- 第三个必要性 -->
+            <div class="col-12 col-lg-4 wow bounceIn">
+                <div id="circlethree" class="circle" data-value="0.75">
+                    <h6 class="counter-num">805亿元</h6>
+                </div>
+                <h4 class="stats-heading">信息泄露损失</h4>
+                <p class="stats-para">据中国政府报告，2021年中国信息泄露损失高达805亿元</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 必要性结束 -->
+<!-- 摘要结束 -->
+
+
+<!-- 学习更多开始 -->
+<section class="learn-more-section">
+    <div class="container">
+        <div class="text-area wow fadeInUpBig heading-area" data-wow-delay=".5s">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading text-white">如果你想了解更多的密码学相关知识 <span class="d-block"> 请点击下列选项 </span></h2>
+                    <a href="mmx.html" class="btn btn-medium btn-rounded btn-blue">学习更多知识</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 学习更多结束 -->
+
+<!-- 古典密码学开始 -->
+<section id="prices" class="prices padding-up">
+    <div class="container">
+        <!--标题-->
+        <div class="row text-center">
+            <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 wow zoomIn heading-area" data-wow-duration="1s" data-wow-delay=".1s">
+                <h3 class="heading text-center">古典密码学</h3>
+                <p class="text text-center" ; style="text-indent:2em;">密码(Cryptology)是一种用来混淆的技术,它希望将正常的、可识别的信息转变为无法识别的信息。密码学是一个即古老又新兴的学科,密码学一词源自希腊文“krypto's”及“logos”两字,直译即为“隐藏”及“讯息”之意。古典密码阶段是指从密码的产生到发展成为近代密码之间的这段时期密码的发展历史。</p>
+            </div>
+        </div>
+        <div class="row padding-top-half">
+            <!-- 内容一 -->
+            <div class="col-12 col-lg-4 wow fadeInLeftBig" data-wow-delay=".4s">
+                <div class="price-item text-center">
+                    <div class="price_header">
+                        <p class="price_header_text"> 换位密码 </p>
+                    </div>
+                    <ul class="price-list">
+                        <li>换位密码，是根据一定的规则重新排列明文，以便打破明文的结构特性。</li>
+                        <li>换位密码的特点是 保持明文的所有字符不变 ，只是利用置换打乱了明文字符的 位置和次序 。也就是说，改变了明文的结构，不改变明文的内容。</li>
+                    </ul>
+                    <a href="gdmmx.html" class="btn btn-medium btn-rounded btn-blue-dark-white mb-5">学习更多知识</a>
+
+                </div>
+            </div>
+            <!-- 内容二 -->
+            <div class="col-12 col-lg-4 wow fadeIn" data-wow-delay=".8s">
+                <div class="price-item-center text-center">
+                    <div class="price_header-center">
+                        <p class="price_header_text"> 替换密码 </p>
+                    </div>
+                    <ul class="price-list">
+                        <li>置换密码的特点是 保持明文的所有字符不变 ，只是利用置换打乱了明文字符的 位置和次序 。也就是说，改变了明文的结构，不改变明文的内容。</li>
+                        <li>根据密码加/解密时使用的替换表的多少，替换密码又可分为单表替换密码和多表替换密码。</li>
+                    </ul>
+                    <a href="gdmmx.html" class="btn btn-medium btn-rounded btn-primary mb-5"> 学习更多知识 </a>
+                </div>
+            </div>
+            <!-- 内容三 -->
+            <div class="col-12 col-lg-4 wow fadeInRightBig" data-wow-delay=".4s">
+                <div class="price-item text-center">
+                    <div class="price_header">
+                        <p class="price_header_text"> 分组密码 </p>
+                    </div>
+                    <ul class="price-list">
+                        <li>分组密码是一种拆解字母的方法，以便一个字母能被两个或多个符号表示。例如：a可以用01代替、b可以用02代替，依次类推我们得到加密表。</li>
+                        <li>虽然分组密码有这些缺陷，但它可以使其他密码更加安全。如将分组与列换位密码结合。</li>
+                    </ul>
+                    <a href="gdmmx.html" class="btn btn-medium btn-rounded btn-blue-dark-white mb-5">学习更多知识</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 古典密码学结束 -->
+
+<!-- 近代密码学开始 -->
+<section class="hosting bg-light-white" id="hosting">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 wow fadeInLeftBig" data-wow-delay=".4s">
+                <div class="heading-area">
+                    <h2 class="heading mb-0">近代密码学</h2>
+                    <p class="text" ; style="text-indent:2em;">近代密码学研究信息从发端到收端的安全传输和安全存储，是研究“知己知彼”的一门科学。其核心是密码编码学和密码分析学。前者致力于建立难以被敌方或对手攻破的安全密码体制，即“知己”；后者则力图破译敌方或对手已有的密码体制，即“知彼”。</p>
+                    <a href="jdmmx.html" class="btn btn-medium btn-rounded btn-primary">学习更多知识</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="1.2s">
+                <div class="img-fluid">
+                    <img src="static/picture/R-C.ico" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 近代密码学结束 -->
+
+<!-- 现代密码学开始 -->
+<section class="testimonial-section py-0" id="testimonials">
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-section wow fadeInLeft" data-wow-delay="300ms">
+            <div class="text-area testimonial-heading">
+                <h2>现代密码学</h2>
+                <h4>伴随着网络的普及,计算机网络安全成为影响网络效能的重要问题,这就对网络的安全提出了更高的要求。现代密码阶段大约是指20世纪50年代以来的时期，其主要特点是采用电子计算机进行加密和解密。因此，该阶段也称为计算机密码时代。</h4>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 carousel-section wow fadeInRight" data-wow-delay="300ms">
+            <div class=" text-center testimonial-carousel owl-carousel owl-themes active">
+                <!-- 对称加密算法 -->
+                <div class="item">
+                    <div class="testimonials">
+                        <div class="quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <a href="AES.html" class="bs"><h2>对称算法</h4></a>
+                        <p class="text subheading">密码学中的高级加密标准（Advanced Encryption Standard，AES），又称Rijndael加密法，是美国联邦政府采用的一种区块加密标准。</p>
+                        <p>AES加密过程是在一个4×4的字节矩阵上运作，这个矩阵又称为“体（state）”，其初值就是一个明文区块（矩阵中一个元素大小就是明文区块中的一个Byte）。（Rijndael加密法因支持更大的区块，其矩阵行数可视情况增加）加密时，各轮AES加密循环（除最后一轮外）均包含4个步骤</p>
+                        <div class="testimonial-image">
+                            <img src="static/picture/1111.jpg" alt="image">
+                        </div>
+                        <h5 class="text">AES加密算法</h5>
+                    </div>
+                </div>
+
+                <!-- 非对称加密算法 -->
+                <div class="item active">
+                    <div class="testimonials">
+                        <div class="quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <a href="RSA.html" class="bs"><h2>非对称加密</h2></a>
+                        <p class="text subheading">RSA是1977年由罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）一起提出的。当时他们三人都在麻省理工学院工作。RSA就是他们三人姓氏开头字母拼在一起组成的。</p>
+                        <p class="text subheading">RSA公开密钥密码体制的原理是：根据数论，寻求两个大素数比较简单，而将它们的乘积进行因式分解却极其困难，因此可以将乘积公开作为加密密钥。</p>
+                        <div class="testimonial-image">
+                            <img src="static/picture/2222.jpg" alt="image">
+                        </div>
+                        <h5 class="text">RSA加密算法</h5>
+                    </div>
+                </div>
+
+                <!-- 摘要算法 -->
+                <div class="item">
+                    <div class="testimonials">
+                        <div class="quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <a href="SHA256.html" class="bs"><h2>摘要算法</h2></a>
+                        <p class="text subheading">SHA-2，名称来自于安全散列算法2（英语：Secure Hash Algorithm 2）的缩写，一种密码散列函数算法标准，由美国国家安全局研发，属于SHA算法之一，是SHA-1的后继者。</p>
+                        <p class="text subheading">哈希函数，又称散列算法，是一种从任何一种数据中创建小的数字“指纹”的方法。散列函数把消息或数据压缩成摘要，使得数据量变小，将数据的格式固定下来。该函数将数据打乱混合，重新创建一个叫做散列值（或哈希值）的指纹。散列值通常用一个短的随机字母和数字组成的字符串来代表。</p>
+                        <div class="testimonial-image">
+                            <img src="static/picture/3333.jpg" alt="image">
+                        </div>
+                        <h5 class="text">SHA256算法</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 现代密码学结束 -->
+
+<!-- 量子密码学开始 -->
+<section class="blog-sec" id="blog">
+    <div class="container">
+        <!--标题-->
+        <div class="row text-center padding-bottom-half">
+            <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 wow zoomIn heading-area" data-wow-duration="1s" data-wow-delay=".1s">
+                <h3 class="heading text-center"> 量子密码学 </h3>
+                <p class="text subheading" ; style="text-indent: 2em;">量子密码学（Quantum Cryptography）是一门很有前途的新领域，许多国家的人员都在研究它，而且在一定的范围内进行了试验。离实际应用只有一段不很长的距离。量子密码体系采用量子态作为信息载体，经由量子通道在合法的用户之间传送密钥。</p>
+            </div>
+        </div>
+        <div class="row wow fadeInUp">
+            <!--基于格的量子密码-->
+            <div class="col-lg-4">
+                <div class="news-item">
+                    <img alt="image" class="news-img" src="static/picture/11111.png">
+                    <div class="news-text-box">
+                        <a href="https://zhuanlan.zhihu.com/p/234950092?utm_source=qq&utm_medium=social&utm_oi=1144941642615173120"><h4 class="news-title">基于格的量子密码</h4></a>
+                        <p class="para">格 more secure than 整数分解等等，可以抵御量子计算机的攻击。而且，有时候可满足更多功能。格困难问题：给定一点，我们无法知道其是从哪点来的，因为维度可以很高（可沿很多方向移动）。但在实际应用中，这个问题被封装成LWE、SIS等问题。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--基于编码的量子密码-->
+            <div class="col-lg-4">
+                <div class="news-item">
+                    <img alt="image" class="news-img" src="static/picture/22222.jpg">
+                    <div class="news-text-box">
+                        <a href="https://zhuanlan.zhihu.com/p/379001794?utm_source=qq&utm_medium=social&utm_oi=1144941642615173120
+                        "><h4 class="news-title">基于编码的量子密码</h4></a>
+                        <p class="para">基于编码的公钥密码由于能抵抗量子攻击和美国 NIST 后量子公钥密码算法的征集而受到越来越多的关注。基于编码的 NIST 抗量子攻击公钥密码征集算法, 梳理基于编码的公钥方案具有的特点, 即三种加密方式, 三种重要的参与码类, 三种安全性基于的困难问题,。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--基于梅森数的量子密码-->
+            <div class="col-lg-4">
+                <div class="news-item">
+                    <img alt="image" class="news-img" src="static/picture/33333.jpg">
+                    <div class="news-text-box">
+                        <a href="https://zhuanlan.zhihu.com/p/500382331?utm_source=qq&utm_medium=social&utm_oi=1144941642615173120"><h4 class="news-title">基于梅森数的量子密码</h4></a>
+                        <p class="para">基于梅森素数的抗量子密码体系是最近新出的抗量子密码系统，它依靠梅森素数的困难问题和低汉明bit的困难问题来实现抗量子特性。并出现了多篇针对性的论文，在各种理论上论证了其安全性和对其进行了理论攻击，目前理论上并未攻破。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 量子密码学结束 -->
+
+<!-- 联系我开始 -->
+<section class="contact-sec" id="contact">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-3 text-center">
+                <div class="user-img"><img src="static/picture/side-logo.png" class="rounded-circle" alt="img"></div>
+                <h4 class="user-name">朱传伟</h4>
+                <p class="user-designation">2832365442@qq.com</p>
+                <p class="user-designation">+86 15057874966</p>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12" id="result"></div>
+                    <div class="col-12 col-md-6">
+                        <form class="row contact-form row-padding" id="contact-form-data">
+                            <div class="col-12">
+                                <input type="text" name="userName" placeholder="Name" class="form-control">
+                                <input type="text" name="userPhone" placeholder="Contact No" class="form-control">
+                                <input type="email" name="userEmail" placeholder="Email" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 contact-form">
+                        <textarea class="form-control" name="userMessage" rows="6" placeholder="Message"></textarea>
+                        <a href="mailto:2832365442@qq.com" class="btn btn-medium btn-rounded btn-trans-white rounded-pill w-100 contact_btn main-font">Send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 联系我结束 -->
+
+<!-- 底部栏开始 -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <!--超链接-->
+            <div class="col-12">
+                <div class="footer-social text-center">
+                    <ul class="list-unstyled">
+                        <li><a class="wow fadeInUp" href="https://connect.facebook.com"><i aria-hidden="true" class="fab fa-facebook-f"></i><span></span></a></li>
+                        <li><a class="wow fadeInDown" href="www.twitters.com"><i aria-hidden="true" class="fab fa-twitter"></i><span></span></a></li>
+                        <li><a class="wow fadeInUp" href="https://google.cn/webhp?source=g_cn"><i aria-hidden="true" class="fab fa-google-plus-g"></i><span></span></a></li>
+                        <li><a class="wow fadeInDown" href="https://cn.linkedin.com"><i aria-hidden="true" class="fab fa-linkedin-in"></i><span></span></a></li>
+                        <li><a class="wow fadeInUp" href="www.sinoclick.com"><i aria-hidden="true" class="fab fa-instagram"></i><span></span></a></li>
+                        <li><a class="wow fadeInDown" href="www.sinoclick.com"><i aria-hidden="true" class="fab fa-pinterest-p"></i><span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 底部行 -->
+            <div class="col-12 text-center mt-3">
+                <p class="company-about fadeIn">Copyright &copy; 2022.5.23 朱传伟
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- 底部栏结束 -->
+
+</body>
+
+<!-- JavaScript -->
+<script src="static/js/bundle.min.js"></script>
+<script src="static/js/jquery.appear.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/jquery.fancybox.min.js"></script>
+<script src="static/js/particles.min.js"></script>
+<script src="static/js/contact_us.js"></script>
+<script src="static/js/circle-progress.min.js"></script>
+<script src="static/js/script.js"></script>
+
+</html>
